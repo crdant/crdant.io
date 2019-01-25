@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 BASEDIR=$(dirname $(dirname $0))
 
-
 generate () {
   certbot certonly --server https://acme-v02.api.letsencrypt.org/directory \
     -m ${EMAIL} --agree-tos \
@@ -13,6 +12,7 @@ generate () {
 main () {
   if [ $# -gt 0 ]; then
     while [ $# -gt 0 ]; do
+      case $1 in
         generate )
           generate
           ;;
