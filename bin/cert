@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+BASEDIR=$(dirname $(dirname $0))
+
+
+generate () {
+  certbot certonly --server https://acme-v02.api.letsencrypt.org/directory \
+    -m ${EMAIL} --agree-tos \
+    --cert-name ${SITE_DOMAIN} --address ${SITE_DOMAIN} --address ${WWW_ALIAS}
+    --config-dir ${CERTBOT_DIR} --logs-dir ${LOG_DIR} --work-dir ${KEY_DIR}/certbot
+    --dns-google --dns-google-credentials ${KEY_FILE} --dns-google-propagation-seconds 120
+}
+
+main () {
+  if [ $# -gt 0 ]; then
+    while [ $# -gt 0 ]; do
+        generate )
+          generate
+          ;;
+        * )
+          echo "Unrecognized option: $1" 1>&2
+          exit 1
+          ;;
+      esac
+      shift
+    done
+  fi
+}
+
+main
