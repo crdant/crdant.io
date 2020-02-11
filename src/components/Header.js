@@ -2,12 +2,14 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div
-      style={{
-        textAlign: 'center',
-      }}
-    >
-      {/* <h2>Site Title</h2> */}
+    <div>
+      <h2 
+        style={{
+          textAlign: 'center',
+          fontFamily: 'Luckiest Guy',
+          fontSize: '5vw'
+        }}
+      >Chuck D'Antonio</h2> 
     </div>
   )
 }

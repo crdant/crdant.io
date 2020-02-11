@@ -67,5 +67,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Luckiest Guy'
+        ],
+      }
+    }
   ],
 }

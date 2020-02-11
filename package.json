@@ -10,6 +10,7 @@
     "gatsby": "^2.0.19",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -45,7 +46,8 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^1.2.0",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "react-social-icons": "^4.1.0"
   },
   "homepage": "",
   "keywords": [],
