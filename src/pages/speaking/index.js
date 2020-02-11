@@ -5,9 +5,9 @@ import Helmet from 'react-helmet'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Layout from '../../components/Layout'
-import portfolioData from './../../data/portfolio'
+import speakingData from './../../data/speaking'
 
-class portfolioIndex extends React.Component {
+class speakingIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -31,9 +31,9 @@ class portfolioIndex extends React.Component {
         >
           <Grid fluid>
             <Row>
-              {portfolioData.map(p => (
+              {speakingData.map(p => (
                 <Col xs={12} sm={12} md={6} lg={6} key={p.title}>
-                  <Link to={'/portfolio/view'} state={p} key={p.title}>
+                  <Link to={'/speaking/view'} state={p} key={p.title}>
                     <div
                       style={{
                         display: 'flex',
@@ -64,7 +64,7 @@ class portfolioIndex extends React.Component {
   }
 }
 
-export default portfolioIndex
+export default speakingIndex
 
 export const query = graphql`
   query {
