@@ -25,13 +25,11 @@ export class Navbar extends Component {
           }}
         >
           <Link to={'/'}>Home</Link>
-          <Link to={'/portfolio'}>Portfolio</Link>
           <Link to={'/journey'}>Journey</Link>
-          <a href={contactData.github} target="_new">
-            Github
-          </a>
+          <Link to={'/portfolio'}>Speaking</Link>
+          <Link to={'/blog'}>Blog</Link> 
+          <Link to={'/resume'}>Resume</Link>
           <Link to={'/contact'}>Contact</Link>
-          <Link to={'/blog'}>Blog</Link>
         </div>
       </div>
     )
