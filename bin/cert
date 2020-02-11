@@ -2,10 +2,10 @@
 BASEDIR=$(dirname $(dirname $0))
 
 generate () {
-  certbot certonly --server https://acme-v02.api.letsencrypt.org/directory \
+ certbot certonly --server https://acme-v02.api.letsencrypt.org/directory \
     -m ${EMAIL} --agree-tos \
-    --cert-name ${SITE_DOMAIN} --address ${SITE_DOMAIN} --address ${WWW_ALIAS}
-    --config-dir ${CERTBOT_DIR} --logs-dir ${LOG_DIR} --work-dir ${KEY_DIR}/certbot
+    --cert-name ${SITE_DOMAIN} --domain ${SITE_DOMAIN} --domain ${WWW_ALIAS} \
+    --config-dir ${CERTBOT_DIR} --logs-dir ${LOG_DIR} --work-dir ${KEY_DIR}/certbot \
     --dns-google --dns-google-credentials ${KEY_FILE} --dns-google-propagation-seconds 120
 }
 
@@ -26,4 +26,4 @@ main () {
   fi
 }
 
-main
+main $@
