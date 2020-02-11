@@ -3,6 +3,7 @@ import React from 'react'
 import { rhythm } from '../utils/typography'
 import Header from '../components/Header'
 import Navbar from './Navbar'
+import Contact from './Contact'
 import Footer from './Footer'
 
 class Layout extends React.Component {
@@ -26,6 +27,7 @@ class Layout extends React.Component {
         <Navbar />
         <br />
         {children}
+        <Contact />
         <Footer />
       </div>
     )
