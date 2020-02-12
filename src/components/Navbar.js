@@ -26,7 +26,7 @@ export class Navbar extends Component {
         >
           <Link to={'/'}>Home</Link>
           <Link to={'/journey'}>Journey</Link>
-          <Link to={'/speaking'}>Speaking</Link>
+          <Link to={'/speaking'}>Talks</Link>
           <Link to={'/blog'}>Blog</Link> 
           <Link to={'/resume'}>Resume</Link>
           <Link to={'/contact'}>Contact</Link>

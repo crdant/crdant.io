@@ -9,26 +9,26 @@ export class view extends Component {
     const passedData = this.props.location.state || {
       title: 'default title',
       description: 'default description',
-      image: 'https://via.placeholder.com/350',
-      website: 'https://via.placeholder.com',
+      media: 'https://via.placeholder.com/350',
+      talk: 'https://via.placeholder.com',
     }
     const { title, description, image, website } = passedData
     return (
       <Layout>
         <Helmet>
-          <title>{`${title} | Sai Krishna`}</title>
+          <title>{`${title}`}</title>
         </Helmet>
-        <Link to="/portfolio">&larr; back</Link>
+        <Link to="/speaking">&larr; back</Link>
         <h2>{title}</h2>
-        <img src={image} />
+        <img src={media} />
         <div>
           {description}
           <br /> <br />
           {website && (
             <div>
               Website:{' '}
-              <a href={website} target="_new">
-                {website}
+              <a href={talk} target="_new">
+                {talk}
               </a>
             </div>
           )}
