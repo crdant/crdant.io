@@ -48,12 +48,12 @@ class Journey extends React.Component {
                 <br />
                 {/* <a href={e.image}>
                   <img src={e.image} />
-                </a> */}
+                </a> 
                 <LightboxImage
                   src={e.image}
                   title={e.headline}
                   caption={e.description}
-                />
+                /> */}
                 {e.description}
               </VerticalTimelineElement>
             ))}
