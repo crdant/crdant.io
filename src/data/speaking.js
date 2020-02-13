@@ -26,7 +26,7 @@ const data = [
       MySQL, and/or Apache are new and unknown as well. (with Jason Ingalls)`,
     icon: <FaDrupal />
   },
-   {
+  {
     title: 'The Future of Drupal in Government',
     talk: 'https://sf2010.drupal.org/conference/sessions/future-drupal-government.html',
     event: 'DrupalCon San Fransciso 2010',
