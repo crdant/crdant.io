@@ -4,9 +4,16 @@ import get from 'lodash/get'
 import Hemlet from 'react-helmet'
 
 import Layout from '../components/Layout'
-import DisplayImage from './../assets/images/main_image.jpg'
 
-class SiteIndex extends React.Component {
+import {
+  Experience,
+  Education
+} from '../components/resume'
+
+import resume from '../../data/resume';
+import '../styles/resume.css'
+
+class Resume extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -20,28 +27,22 @@ class SiteIndex extends React.Component {
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
         </Hemlet>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. At augue
-          eget arcu dictum varius duis. Vestibulum lectus mauris ultrices eros
-          in cursus turpis. Blandit volutpat maecenas volutpat blandit aliquam
-          etiam. Sagittis purus sit amet volutpat. Nullam ac tortor vitae purus
-          faucibus ornare suspendisse. Vulputate sapien nec sagittis aliquam
-          malesuada. Quis imperdiet massa tincidunt nunc pulvinar sapien et
-          ligula ullamcorper. Sit amet cursus sit amet dictum sit amet.
-          Malesuada proin libero nunc consequat interdum varius sit amet. Sed
-          egestas egestas fringilla phasellus faucibus scelerisque eleifend.
-          Habitasse platea dictumst quisque sagittis. Sem viverra aliquet eget
-          sit amet tellus cras adipiscing enim. Amet massa vitae tortor
-          condimentum lacinia quis vel eros donec.
-        </p>
-        <img src={DisplayImage} alt={siteTitle} />
+        <resume className="antialiased text-neutral-900 bg-neutral-100 min-h-screen sm:p-5">
+          <div className="border-b border-neutral-300 pb-2 my-5 lg:flex">
+            <div className="lg:w-2/3 lg:pr-8">
+              {resume.experience && <Experience data={resume.experience} />}
+            </div>
+            <div className="lg:w-1/3 lg:pl-8 lg:border-l lg:border-neutral-300 ">
+              {resume.education && <Education data={resume.education} />}
+            </div>
+          </div>
+        </resume>
       </Layout>
     )
   }
 }
 
-export default SiteIndex
+export default Resume
 
 export const query = graphql`
   query {

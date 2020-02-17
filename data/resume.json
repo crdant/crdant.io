@@ -1,0 +1,72 @@
+{
+  "education": [
+    {
+      "institution": "Bates College",
+      "degree": "BA, Mathematics",
+      "end": "1995",
+      "accomplishments": [
+        "Magna Cum Luade",
+        "Honors in Mathematics",
+        "Phi Beta Kappa"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Advisory Platform Architect",
+      "company": "Pivotal Software",
+      "description": "",
+      "start": "03/2016",
+      "end": ""
+    },
+    {
+      "role": "Vice President, Global Markets Technology",
+      "company": "State Street Corporation",
+      "description": "",
+      "start": "05/2010",
+      "end": "03/2016"
+    },
+    {
+      "role": "Senior Director, Professional Services",
+      "company": "Acquia",
+      "description": "",
+      "start": "02/2008",
+      "end": "05/2010"
+    },
+    {
+      "role": "Global Practice Manager, Service-Oriented Architecture",
+      "company": "HP (through acquisition of Mercury Interactive)",
+      "description": "",
+      "start": "11/2006",
+      "end": "02/2008"
+    },
+    {
+      "role": "Manager, SOA Services",
+      "company": "Dmapper",
+      "description": "",
+      "start": "05/2006",
+      "end": "11/2006"
+    },
+    {
+      "role": "Director, Professional Services",
+      "company": "Systinet",
+      "description": "",
+      "start": "02/2004",
+      "end": "05/2006"
+    },
+    {
+      "role": "Principal Consultant",
+      "company": "Context Integration",
+      "description": "",
+      "start": "11/1999",
+      "end": "02/2004"
+    },
+    {
+      "role": "Programmer/Analyst",
+      "company": "Harvard University",
+      "description": "",
+      "start": "06/1995",
+      "end": "11/1999"
+    }
+  ]
+}

@@ -74,6 +74,22 @@ module.exports = {
           'Luckiest Guy'
         ],
       }
+    },
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        tailwind: true, // Enable tailwindcss support
+      }
+    },
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data/`,
+      }
     }
-  ],
+  ]
 }
