@@ -11,8 +11,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 import './../styles/timeline.css'
-import LightboxImage from '../components/LightboxImage'
-import journeyData from './../data/journey'
+
+import Icon from '../components/journey/Icon'
 
 class Journey extends React.Component {
   render() {
@@ -21,6 +21,8 @@ class Journey extends React.Component {
       this,
       'props.data.site.siteMetadata.description'
     )
+
+    const journey = get(this, 'props.data.allJourneyYaml.nodes')
 
     return (
       <Layout style={{ maxWidth: rhythm(45) }}>
@@ -34,25 +36,17 @@ class Journey extends React.Component {
 
         <div>
           <VerticalTimeline animate={false}>
-            {journeyData.map(e => (
+            {journey.map(e => (
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date={e.date}
-                icon={e.icon}
+                icon=<Icon type={e.type} />
                 key={e.headline}
               >
                 <h3 className="vertical-timeline-element-title">
                   {e.headline}
                 </h3>
                 <br />
-                {/* <a href={e.image}>
-                  <img src={e.image} />
-                </a> 
-                <LightboxImage
-                  src={e.image}
-                  title={e.headline}
-                  caption={e.description}
-                /> */}
                 {e.description}
               </VerticalTimelineElement>
             ))}
@@ -71,6 +65,14 @@ export const query = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    allJourneyYaml(sort: {fields: date, order: DESC}) {
+      nodes {
+        date
+        description
+        headline
+        type
       }
     }
   }

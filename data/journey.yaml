@@ -1,14 +1,9 @@
-import React from 'react'
-import { MdComputer  } from 'react-icons/md'
+- headline: Selected a Path
+  description: Realized a career in journalism with programming as a hobby might not be the best way to go about thingsh
+  date: February 1993
+  type: technology
+- headline: Inducted into Phi Beta Kappa
+  description: Recognized for academic achievement
+  date: May 1995
+  type: honor
 
-const data = [
-  {
-    date: 'February 1993',
-    headline: 'Selected a Path',
-    description: `Realized a career in journalism with programming as
-    a hobby might not be the best way to go about things.`,
-    icon: <MdComputer />,
-  }
-]
-
-export default data
