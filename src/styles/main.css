@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+.site-title {
+  @apply text-center text-6xl font-display
+}
+
+@tailwind utilities;
