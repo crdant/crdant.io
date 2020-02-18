@@ -115,5 +115,47 @@
       "start": "04/1994",
       "end": "05/1995"
     }
+  ],
+  "community": [
+    {
+      "role": "Volunteer",
+      "organization": "Boston Rescue Mission",
+      "start": "06/2013",
+      "end": "10/2015",
+      "description": "Regularly volunteered to serve meals to shelter residents and other members of the homeless community in Boston"
+    },
+    {
+      "role": "Web Site Advisor",
+      "organization": "PSVillage",
+      "start": "03/2008",
+      "end": "02/2009",
+      "description": "Advised member-driven professional services community on improvements to their online presence."
+    },
+    {
+      "role": "Parlimentarian",
+      "organization": "Medford [MA] Soccer",
+      "start": "01/2012",
+      "end": "01/2014",
+      "description": "Executive board member of local youth soccer program"
+    },
+    {
+      "role": "Coach",
+      "organization": "Medford [MA] Soccer",
+      "start": "09/2010",
+      "end": "05/2012",
+      "description": "Coached teams in U-6 and U-8 age groups. Worked with children to develop soccer skills and teamwork."
+    },
+    {
+      "role": "Executive Committee",
+      "organization": "Medford [MA] Boat Club",
+      "start": "10/2012",
+      "end": "10/2014"
+    },
+    {
+      "role": "Executive Secretary",
+      "organization": "Medford [MA] Boat Club",
+      "start": "10/2010",
+      "end": "10/2012"
+    }
   ]
 }

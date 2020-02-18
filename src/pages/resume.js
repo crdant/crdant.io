@@ -7,7 +7,8 @@ import Layout from '../components/Layout'
 
 import {
   Experience,
-  Education
+  Education,
+  Community
 } from '../components/resume'
 
 import resume from '../../data/resume';
@@ -34,6 +35,7 @@ class Resume extends React.Component {
             </div>
             <div className="lg:w-1/3 lg:pl-8 lg:border-l lg:border-neutral-300 ">
               {resume.education && <Education data={resume.education} />}
+              {resume.community && <Community data={resume.community} />}
             </div>
           </div>
         </resume>
