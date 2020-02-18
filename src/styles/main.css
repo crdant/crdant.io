@@ -2,7 +2,15 @@
 @tailwind components;
 
 .site-title {
-  @apply text-center text-6xl font-display
+  @apply text-center text-6xl font-display text-primary
+}
+
+.page-title {
+  @apply text-left text-2xl text-primary
+}
+
+.navigation {
+  @apply text-secondary
 }
 
 @tailwind utilities;

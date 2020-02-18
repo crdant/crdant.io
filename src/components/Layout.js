@@ -6,6 +6,8 @@ import Navbar from './Navbar'
 import Contact from './Contact'
 import Footer from './Footer'
 
+import '../styles/main.css'
+
 class Layout extends React.Component {
   render() {
     const { children } = this.props

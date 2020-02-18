@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 .vertical-timeline--two-columns
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
@@ -16,7 +19,8 @@
 }
 
 .vertical-timeline-element-icon {
-  box-shadow: 0 0 0 4px #34495e;
+  box-shadow: 0 0 0 4px theme('color.primary');
+  @apply text-primary stroke-current bg-white
 }
 
 .vertical-timeline-element-content {
@@ -39,9 +43,11 @@
 
 .vertical-timeline::before {
   /* this is the vertical line */
-  background: #34495e;
+  @apply bg-primary
 }
 
 .vertical-timeline-element-title {
-  color: #4078c0;
+  @apply text-primary 
 }
+
+@tailwind utilities;

@@ -24,11 +24,11 @@ export class Navbar extends Component {
             justifyContent: 'space-between',
           }}
         >
-          <Link to={'/'}>Home</Link>
-          <Link to={'/journey'}>Journey</Link>
-          <Link to={'/speaking'}>Talks</Link>
-          <Link to={'/blog'}>Blog</Link> 
-          <Link to={'/resume'}>Resume</Link>
+          <Link className="navigation" to={'/'}>Home</Link>
+          <Link className="navigation" to={'/journey'}>Journey</Link>
+          <Link className="navigation" to={'/speaking'}>Talks</Link>
+          <Link className="navigation" to={'/blog'}>Blog</Link> 
+          <Link className="navigation" to={'/resume'}>Resume</Link>
           {/* <Link to={'/contact'}>Contact</Link> */}
         </div>
       </div>

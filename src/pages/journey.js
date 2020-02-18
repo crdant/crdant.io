@@ -30,7 +30,7 @@ class Journey extends React.Component {
           title={`Journey | ${siteTitle}`}
         />
 
-        <h2>Journey</h2>
+        <h2 className="page-title">Journey</h2>
 
         <div>
           <VerticalTimeline animate={false}>
@@ -38,7 +38,6 @@ class Journey extends React.Component {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date={e.date}
-                iconStyle={{ background: '#fff', color: '#34495e' }}
                 icon={e.icon}
                 key={e.headline}
               >

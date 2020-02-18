@@ -28,7 +28,7 @@ class Resume extends React.Component {
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
         </Hemlet>
-        <resume className="antialiased text-neutral-900 bg-neutral-100 min-h-screen sm:p-5">
+        <main className="antialiased text-neutral-900 min-h-screen sm:p-5">
           <div className="border-b border-neutral-300 pb-2 my-5 lg:flex">
             <div className="lg:w-2/3 lg:pr-8">
               {resume.experience && <Experience data={resume.experience} />}
@@ -38,7 +38,7 @@ class Resume extends React.Component {
               {resume.community && <Community data={resume.community} />}
             </div>
           </div>
-        </resume>
+        </main>
       </Layout>
     )
   }

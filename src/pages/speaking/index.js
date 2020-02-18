@@ -22,7 +22,7 @@ class speakingIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`Portfolio | ${siteTitle}`}
         />
-        <h2>Portfolio</h2>
+        <h2 className="page-title">Portfolio</h2>
         <br />
         <div
           style={{
