@@ -20,7 +20,7 @@
       "description": "Evangelized products and advocated for customer needs to secure, maintain, and expand subscriptions to Pivotal Cloud Foundry and other commercial open source products. Supported technical and product teams to increase delivered value and ensure customer satisfaction.",
       "accomplishments": [
         "Rebuilt relationship with largest ARR customer, securing $18 million renewal after customer informed us they would be phasing out our products. Established myself as a trusted advisor and improved our brand across their platform and operations team.",
-        "Grew $1 million ARR insurance customer to $6 ARR in one year by increasing awareness, developer skills, and product consumption. Pioneered consumption pricing model enabling us to position our products more favorably against pay-as-you-go commercial cloud providers.",
+        "Grew $1 million ARR insurance customer to $6 million ARR in one year by increasing awareness, developer skills, and product consumption. Pioneered consumption pricing model enabling us to position our products more favorably against pay-as-you-go commercial cloud providers.",
         "Developed and implemented account strategies for small and mid-market customers to shorten sales cycles and find attractive price points for price-sensitive buyers."
       ]
     },
@@ -107,13 +107,6 @@
       "description": "Lead small development teams developing client-server and Internet software for internal use across the Faculty of Arts and Sciences.  Provided support for custom developed applications and assisted in management of databases, servers, and Mac and Windows desktops.",  
       "start": "06/1995",
       "end": "11/1999"
-    },
-    {
-      "role": "Intern",
-      "company": "Harvard Data Center (now Harvard/MIT Data Center)",
-      "description": "Implemented initial web application cataloging and delivering datasets to social science researchers.",
-      "start": "04/1994",
-      "end": "05/1995"
     }
   ],
   "community": [
@@ -129,7 +122,7 @@
       "organization": "Medford [MA] Soccer",
       "start": "01/2012",
       "end": "01/2014",
-      "description": "Executive board member of local youth soccer program"
+      "description": "Executive board member of local youth soccer program. Responsible for ensure smooth functioning of executive board meetings according to organizational bylaws."
     },
     {
       "role": "Coach",
@@ -142,13 +135,15 @@
       "role": "Executive Committee",
       "organization": "Medford [MA] Boat Club",
       "start": "10/2012",
-      "end": "10/2014"
+      "end": "10/2014",
+      "description": "Served as member of five person executive committee responsible for annual budgeting and operations."
     },
     {
       "role": "Executive Secretary",
       "organization": "Medford [MA] Boat Club",
       "start": "10/2010",
-      "end": "10/2012"
+      "end": "10/2012",
+      "desccription": "Officer of not-for-profit recreational club. Coordinated board meetings and communicatioins to membership."
     },
     {
       "role": "Web Site Advisor",
