@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Accomplishment = ({ text }) => (
-  <li className="my-1" key={index}>
+const Accomplishment = ({ key, text }) => (
+  <li className="list-disc" key={key}>
     <span className="inline-block font-medium ml-2">{text}</span>
   </li>
 );

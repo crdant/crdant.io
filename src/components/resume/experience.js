@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Accomplishments from "./accomplishments"
+
 const Experience = ({ data }) => (
   <section>
     <h1 className="section-header">Experience</h1>
@@ -11,6 +13,7 @@ const Experience = ({ data }) => (
             {item.company} | {item.start} - {item.end || <em>present</em> }
           </h3>
           <p className="py-6">{item.description}</p>
+          {item.accomplishments && <Accomplishments data={item.accomplishments} />}
         </article>
       ))}
   </section>
