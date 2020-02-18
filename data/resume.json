@@ -124,14 +124,7 @@
       "end": "10/2015",
       "description": "Regularly volunteered to serve meals to shelter residents and other members of the homeless community in Boston"
     },
-    {
-      "role": "Web Site Advisor",
-      "organization": "PSVillage",
-      "start": "03/2008",
-      "end": "02/2009",
-      "description": "Advised member-driven professional services community on improvements to their online presence."
-    },
-    {
+   {
       "role": "Parlimentarian",
       "organization": "Medford [MA] Soccer",
       "start": "01/2012",
@@ -156,6 +149,13 @@
       "organization": "Medford [MA] Boat Club",
       "start": "10/2010",
       "end": "10/2012"
+    },
+    {
+      "role": "Web Site Advisor",
+      "organization": "PSVillage",
+      "start": "03/2008",
+      "end": "02/2009",
+      "description": "Advised member-driven professional services community on improvements to their online presence."
     }
-  ]
+   ]
 }
