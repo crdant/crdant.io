@@ -11,8 +11,8 @@ import {
   Community
 } from '../components/resume'
 
-import resume from '../../data/resume';
 import '../styles/resume.css'
+
 
 class Resume extends React.Component {
   render() {
@@ -21,6 +21,8 @@ class Resume extends React.Component {
       this,
       'props.data.site.siteMetadata.description'
     )
+
+    const resume = get(this, 'props.data.dataYaml')
 
     return (
       <Layout>
@@ -37,7 +39,7 @@ class Resume extends React.Component {
               {resume.education && <Education data={resume.education} />}
               {resume.community && <Community data={resume.community} />}
             </div>
-          </div>
+          </div> 
         </main>
       </Layout>
     )
@@ -52,6 +54,29 @@ export const query = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    dataYaml {
+      education {
+        institution
+        degree
+        end
+        accomplishments
+      }
+      experience {
+        accomplishments
+        company
+        description
+        end
+        role
+        start
+      }
+      community {
+        description
+        end
+        organization
+        role
+        start
       }
     }
   }

@@ -83,7 +83,7 @@ module.exports = {
         tailwind: true, // Enable tailwindcss support
       }
     },
-    'gatsby-transformer-json',
+    'gatsby-transformer-yaml',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
