@@ -6,7 +6,11 @@
 }
 
 .blog-bio {
-  @apply flex mb-10
+  @apply flex flex-row mb-10
+}
+
+.avatar {
+  @apply mr-2 mb-0 w-12 h-12 rounded-full self-center
 }
 
 .nav-section {
@@ -26,7 +30,7 @@
 }
 
 .navigation {
-  @apply text-secondary px-4
+  @apply text-secondary px-8
 }
  
 @tailwind utilities;
