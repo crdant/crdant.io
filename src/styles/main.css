@@ -14,11 +14,11 @@
 }
 
 .nav-section {
-  @apply w-full flex self-center 
+  @apply w-full flex self-center justify-center 
 }
 
 .nav-menu {
-  @apply px-32 w-full flex flex-row justify-between 
+  @apply w-3/4 flex flex-row justify-between flex-wrap
 } 
 
 .site-title {
