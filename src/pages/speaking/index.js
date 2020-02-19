@@ -24,11 +24,7 @@ class speakingIndex extends React.Component {
         />
         <h2 className="page-title">Talks</h2>
         <br />
-        <div
-          style={{
-            textAlign: 'center',
-          }}
-        >
+        <div className="text-center">
           <Grid fluid>
             <Row>
               {speakingData.map(p => (

@@ -18,7 +18,7 @@ export class view extends Component {
         <Helmet>
           <title>{`${title}`}</title>
         </Helmet>
-        <Link to="/speaking">&larr; back</Link>
+        <Link className="back-link" to="/speaking">&larr; back</Link>
         <h2>{title}</h2>
       {/*<img src={media} /> */}
         <div>
