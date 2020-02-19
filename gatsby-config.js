@@ -75,6 +75,8 @@ module.exports = {
       options: {
         printRejected: true,
         tailwind: true, // Enable tailwindcss support
+        whitelistPatterns: [ /vertical-timeline/ ],
+        whitelistPatternsChildren: [ /vertical-timeline/ ]
       }
     },
     'gatsby-transformer-yaml',
