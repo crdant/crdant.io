@@ -12,6 +12,7 @@ class Bio extends React.Component {
   render() {
     return (
       <div className="blog-bio">
+        <hr className="blog-footer-rule" />
         <Gravatar
           email='chuck@thedantonios.net'
           className="avatar"

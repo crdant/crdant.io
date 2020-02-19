@@ -6,7 +6,7 @@
 }
 
 .blog-bio {
-  @apply flex flex-row mb-10
+  @apply flex flex-row mb-10 mt-12 border-t pt-4 text-neutral-600 italic
 }
 
 .avatar {
@@ -26,11 +26,23 @@
 }
 
 .page-title {
-  @apply text-left text-2xl text-primary
+  @apply text-left text-2xl text-primary mb-8
+}
+
+.post-title {
+  @apply text-neutral-800
+}
+
+.post-date {
+  @apply mb-4 text-neutral-400
 }
 
 .navigation {
   @apply text-secondary px-8
 }
  
+.back-link {
+  @apply text-neutral-300
+}
+
 @tailwind utilities;

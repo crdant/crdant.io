@@ -4,7 +4,6 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Layout from '../../components/Layout'
-import { rhythm } from '../../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
@@ -27,16 +26,12 @@ class BlogIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.frontmatter.path
           return (
             <div key={node.frontmatter.path}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
+              <h3 className="post-title">
                 <Link style={{ boxShadow: 'none' }} to={node.frontmatter.path}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small className="post-date">{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
