@@ -1,6 +1,22 @@
 @tailwind base;
 @tailwind components;
 
+.main-layout { 
+  @apply p-6 max-w-4xl mx-auto
+}
+
+.blog-bio {
+  @apply flex mb-10
+}
+
+.nav-section {
+  @apply w-full flex self-center 
+}
+
+.nav-menu {
+  @apply px-32 w-full flex flex-row justify-between 
+} 
+
 .site-title {
   @apply text-center text-6xl font-display text-primary
 }
@@ -10,7 +26,7 @@
 }
 
 .navigation {
-  @apply text-secondary
+  @apply text-secondary px-4
 }
-
+ 
 @tailwind utilities;

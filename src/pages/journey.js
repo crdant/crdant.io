@@ -9,7 +9,6 @@ import 'react-vertical-timeline-component/style.min.css'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import { rhythm } from '../utils/typography'
 import './../styles/timeline.css'
 
 import Icon from '../components/journey/Icon'
@@ -25,7 +24,7 @@ class Journey extends React.Component {
     const journey = get(this, 'props.data.allJourneyYaml.nodes')
 
     return (
-      <Layout style={{ maxWidth: rhythm(45) }}>
+      <Layout >
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}

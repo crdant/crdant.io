@@ -12,7 +12,7 @@ import bioData from './../data/bio'
 class Bio extends React.Component {
   render() {
     return (
-      <div
+      <div className="blog-bio"
         style={{
           display: 'flex',
           marginBottom: rhythm(2.5),
