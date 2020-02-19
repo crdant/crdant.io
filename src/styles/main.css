@@ -22,7 +22,7 @@
 } 
 
 .site-title {
-  @apply text-center text-6xl font-display text-primary
+  @apply text-center text-6xl font-display text-primary mb-2 border-b
 }
 
 .page-title {
