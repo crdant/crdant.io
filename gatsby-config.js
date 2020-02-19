@@ -60,12 +60,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-google-fonts',
