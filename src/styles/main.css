@@ -30,7 +30,7 @@
 }
 
 .post-title {
-  @apply text-neutral-800
+  @apply text-neutral-800 text-xl
 }
 
 .post-date {
