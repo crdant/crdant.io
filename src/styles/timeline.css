@@ -2,6 +2,10 @@
 @tailwind components;
 
 .vertical-timeline--two-columns
+  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+  .vertical-timeline-element-content
+ 
+.vertical-timeline--two-columns
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
   left: 144%;

@@ -75,6 +75,7 @@ module.exports = {
       options: {
         printRejected: true,
         tailwind: true, // Enable tailwindcss support
+        whitelist: [ 'container-fluid' ]
         whitelistPatterns: [ /vertical-timeline/ ],
         whitelistPatternsChildren: [ /vertical-timeline/ ]
       }
